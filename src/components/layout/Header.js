@@ -15,7 +15,7 @@ function AuthLinks({status, userName}) {
         </Link>
         <button
           onClick={() => signOut()}
-          className="bg-primary rounded-full text-white px-8 py-2">
+          className="bg-lime-600 rounded-full text-white px-8 py-2">
           Logout
         </button>
       </>
@@ -25,7 +25,7 @@ function AuthLinks({status, userName}) {
     return (
       <>
         <Link href={'/login'}>Login</Link>
-        <Link href={'/register'} className="bg-primary rounded-full text-white px-8 py-2">
+        <Link href={'/register'} className="bg-lime-600 rounded-full text-white px-8 py-2">
           Register
         </Link>
       </>
@@ -46,14 +46,14 @@ export default function Header() {
   return (
     <header>
       <div className="flex items-center md:hidden justify-between">
-        <Link className="text-primary font-semibold text-2xl" href={'/'}>
-          ST PIZZA
+        <Link className="text-primary font-semibold text-2xl text-lime-600" href={'/'}>
+          FOOD TO DOOR
         </Link>
         <div className="flex gap-8 items-center">
           <Link href={'/cart'} className="relative">
             <ShoppingCart />
             {cartProducts?.length > 0 && (
-              <span className="absolute -top-2 -right-4 bg-primary text-white text-xs py-1 px-1 rounded-full leading-3">
+              <span className="absolute -top-2 -right-4 bg-lime-600 text-white text-xs py-1 px-1 rounded-full leading-3">
             {cartProducts.length}
           </span>
             )}
@@ -78,8 +78,8 @@ export default function Header() {
       )}
       <div className="hidden md:flex items-center justify-between">
         <nav className="flex items-center gap-8 text-gray-500 font-semibold">
-          <Link className="text-primary font-semibold text-2xl" href={'/'}>
-            ST PIZZA
+          <Link className="text-primary font-semibold text-2xl text-lime-600" href={'/'}>
+            FOOD TO DOOR
           </Link>
           <Link href={'/'}>Home</Link>
           <Link href={'/menu'}>Menu</Link>
@@ -91,7 +91,7 @@ export default function Header() {
           <Link href={'/cart'} className="relative">
             <ShoppingCart />
             {cartProducts?.length > 0 && (
-              <span className="absolute -top-2 -right-4 bg-primary text-white text-xs py-1 px-1 rounded-full leading-3">
+              <span className="absolute -top-2 -right-4 bg-lime-600 text-white text-xs py-1 px-1 rounded-full leading-3">
             {cartProducts.length}
           </span>
             )}
